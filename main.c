@@ -1,8 +1,19 @@
-#include <stdio.h>
+#include "carracing.h"
+#include "display.h"
 
 int main()
 {
-    printf ("Hello world!");
-    
+    char matriz[LINHAS][COLUNAS];
+
+
+    //apaga o cursor da tela
+    ShowConsoleCursor(0);
+    system("cls");
+
+    //inicializando a matriz
+    init(matriz);
+
+    system("pause");
+
     return 0;
 }
